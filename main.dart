@@ -4,9 +4,9 @@ void main() {
 	customer.add(12.2);
 	print(customer.getPurchaseAmount());
   final loyalCustomer = LoyalCustomer("Ahmed");
- loyalCustomer.add(54.5);
-	loyalCustomer.add(12.2);
-  print(loyalCustomer._purchaseAmount);
+ loyalCustomer.add(50);
+	loyalCustomer.add(50);
+  print(loyalCustomer.getPurchaseAmount());
 }
 
 class Customer{
@@ -28,7 +28,7 @@ class LoyalCustomer extends Customer {
   LoyalCustomer(super.name);
 
 @override
-double get _purchaseAmount => (super._purchaseAmount*0.9); 
+double getPurchaseAmount() => (super._purchaseAmount*0.9); 
   }
    
   
